@@ -1,8 +1,11 @@
-const User = ({props}) => {
+const User = (props) => {
+
+    const {name, handle} = props;
+    //console.log(props.name, props.handle);
     return (
         <span className="user">
-            <span className="name">{props.name}</span>
-            <span className="handle">{props.handle}</span>
+            <span className="name">{name}</span>
+            <span className="handle">@{handle}</span>
         </span> 
     );
 };

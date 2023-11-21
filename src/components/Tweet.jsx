@@ -5,13 +5,14 @@ import TimeStamp from "./Timestamp";
 import User from "./User";
 
 function Tweet(props) {
+  //console.log(props.tweet.timestamp);
   return (
     <div className="tweet">
       <Profileimage image={props.tweet.user.image} />
       
       <div className="body">
         <div className="top">
-          <User props={props.tweet.user} />
+          <User name={props.tweet.user.name} handle={props.tweet.user.handle}/>
           <TimeStamp time={props.tweet.timestamp} />
         </div>
         <Message message={props.tweet.message} />
