@@ -5,7 +5,6 @@ import TimeStamp from "./Timestamp";
 import User from "./User";
 
 function Tweet(props) {
-  //console.log(props.tweet.timestamp);
   return (
     <div className="tweet">
       <Profileimage image={props.tweet.user.image} />
